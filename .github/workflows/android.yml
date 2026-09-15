@@ -13,38 +13,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-
+          java-version: '21'
       - name: Install dependencies
         run: npm install
-
       - name: Prepare web assets
         run: |
           rm -rf www
           mkdir -p www/icons
           cp index.html style.css app.js boot-fix.js films.json default_users.json manifest.webmanifest sw.js www/
           cp icons/* www/icons/
-
       - name: Add Android platform
         run: npx cap add android
-
       - name: Sync web app
         run: npx cap sync android
-
       - name: Build debug APK
         working-directory: android
         run: ./gradlew assembleDebug
-
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
