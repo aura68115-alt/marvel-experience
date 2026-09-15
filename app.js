@@ -3,7 +3,24 @@ let films={},users={},currentUser=null,selectedFilm=null,screen='login',game=nul
 const EXCLUSIVE='⭐ FILM ESCLUSIVO - Sorpresa di Compleanno! 🎁';
 const ACH=[['primo_passo','Primo passo','Guarda il primo film','🥉',d=>d.visti.length>=1],['maratoneta','Maratoneta','Guarda 10 film','🥈',d=>d.visti.length>=10],['archivista','Archivista Marvel','Guarda 25 film','🥇',d=>d.visti.length>=25],['fan_assoluto','Fan assoluto','Aggiungi 15 preferiti','❤️',d=>d.preferiti.length>=15],['critico','Critico cinematografico','Vota 20 film','⭐',d=>Object.keys(d.valutazioni).length>=20],['spider_verse','Spider-Verse','Guarda tutti gli Spider-Man','🕷️',d=>['Spider-Man (2002)','Spider-Man 2 (2004)','Spider-Man 3 (2007)','The Amazing Spider-Man (2012)','The Amazing Spider-Man 2 (2014)','Spider-Man: Homecoming (2017)','Spider-Man: Far from Home (2019)','Spider-Man: No Way Home (2021)'].every(f=>d.visti.includes(f))],['avenger','Avenger','Completa tutte le Fasi 1–3','⚡',d=>Object.entries(films).filter(([_,x])=>['MCU Fase 1','MCU Fase 2','MCU Fase 3'].includes(x.fase)).every(([f])=>d.visti.includes(f))],['sopravvissuto','Sopravvissuto al Multiverso','Raggiungi 500 punti nel gioco','💀',d=>d.record_gioco>=500],['collezionista','Collezionista','Aggiungi 5 preferiti','💎',d=>d.preferiti.length>=5],['cinefilo','Cinefilo','Guarda 50 film','🎬',d=>d.visti.length>=50],['cinque_stelle','Cinque stelle','Dai almeno una valutazione da 5 stelle','🌟',d=>Object.values(d.valutazioni).includes(5)],['multiverso','Esploratore del Multiverso','Guarda film di 5 universi differenti','🌌',d=>new Set(d.visti.filter(f=>films[f]).map(f=>films[f].fase)).size>=5],['campione','Campione dell’arena','Raggiungi 1000 punti','🏆',d=>d.record_gioco>=1000],['legendario','Leggendario','Guarda 75 film','👑',d=>d.visti.length>=75],['completista','Completista','Guarda tutto il catalogo','🔥',d=>d.visti.length>=Object.keys(films).length]];
 function load(){films=window.__FILMS||{}; const raw=localStorage.getItem('marvel_experience_users'); users=raw?JSON.parse(raw):structuredClone(DEFAULT_USERS); for(const n in DEFAULT_USERS) users[n] ||= structuredClone(DEFAULT_USERS[n]);}
-async function boot(){try{const r=await fetch('films.json');films=await r.json()}catch(e){films={}};const raw=localStorage.getItem('marvel_experience_users');users=raw?JSON.parse(raw):structuredClone(DEFAULT_USERS);Object.keys(DEFAULT_USERS).forEach(n=>users[n] ||= structuredClone(DEFAULT_USERS[n]));setTimeout(()=>{document.getElementById('splash').classList.add('hide');render()},900)}
+async function boot(){
+  const loadFilms = fetch('./films.json?cacheBust='+Date.now(), {cache:'no-store'})
+    .then(r => { if(!r.ok) throw new Error('Catalogo non disponibile'); return r.json(); })
+    .then(data => { films = data || {}; })
+    .catch(() => { films = {}; });
+  const timeout = new Promise(resolve => setTimeout(resolve, 2500));
+  await Promise.race([loadFilms, timeout]);
+  try {
+    const raw=localStorage.getItem('marvel_experience_users');
+    users=raw?JSON.parse(raw):structuredClone(DEFAULT_USERS);
+  } catch(e) {
+    users=structuredClone(DEFAULT_USERS);
+  }
+  Object.keys(DEFAULT_USERS).forEach(n=>users[n] ||= structuredClone(DEFAULT_USERS[n]));
+  document.getElementById('splash').classList.add('hide');
+  render();
+  loadFilms.then(()=>{ if(Object.keys(films).length && screen!=='login') render(); });
+}
 function save(){localStorage.setItem('marvel_experience_users',JSON.stringify(users))} function d(){return users[currentUser]}
 function unlocked(){return ACH.filter(a=>a[4](d())).map(a=>a[0])} function checkAchievements(){const u=d();const before=new Set(u.achievement_sbloccati||[]);const now=unlocked();u.achievement_sbloccati=now;save();const fresh=now.filter(x=>!before.has(x));if(fresh.length) toast('🏆 Achievement sbloccato!')}
 function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2200)}
