@@ -30,6 +30,16 @@ jobs:
           mkdir -p www/icons
           cp index.html style.css app.js boot-fix.js films.json default_users.json manifest.webmanifest sw.js www/
           cp icons/* www/icons/
+      - name: Harden Android startup
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('www/app.js')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('structuredClone(DEFAULT_USERS)', 'JSON.parse(JSON.stringify(DEFAULT_USERS))')
+          s = s.replace('structuredClone(DEFAULT_USERS[n])', 'JSON.parse(JSON.stringify(DEFAULT_USERS[n]))')
+          p.write_text(s, encoding='utf-8')
+          PY
       - name: Add Android platform
         run: npx cap add android
       - name: Sync web app
