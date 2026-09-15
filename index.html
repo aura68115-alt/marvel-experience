@@ -14,6 +14,7 @@
 <title>Marvel Experience</title>
 </head>
 <body>
+<div id="splash" class="splash hide"></div>
 <main id="app" class="app">
 <section class="screen active">
 <div class="wrap">
@@ -24,11 +25,10 @@
 </main>
 <div id="toast" class="toast"></div>
 <script>
-// Elimina eventuali vecchie versioni del service worker che possono aver congelato l'app.
 if('serviceWorker' in navigator){
   navigator.serviceWorker.getRegistrations().then(rs=>Promise.all(rs.map(r=>r.unregister()))).catch(()=>{});
 }
 </script>
-<script src="./app.js?v=20260915-4"></script>
+<script src="./app.js?v=20260915-5"></script>
 </body>
 </html>
