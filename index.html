@@ -1,1 +1,34 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#080910"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Marvel Experience"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="style.css"><title>Marvel Experience</title></head><body><div id="splash" class="splash"><div><div class="splash-logo">🦸‍♂️</div><h1>MARVEL EXPERIENCE</h1><div class="loader"><i></i></div><div class="muted">Caricamento universo...</div></div></div><main id="app" class="app"><section class="screen active"><div class="wrap"><div class="hero"><div class="logo">🦸‍♂️</div><h1>MARVEL EXPERIENCE</h1><p>Il tuo universo. Le tue regole.</p></div><div class="login-grid"><div class="card"><h3>Avvio dell'universo...</h3><p class="muted">Se questa schermata rimane qui, ricarica la pagina.</p></div></div></div></section></main><div id="toast" class="toast"></div><script src="app.js?v=20260915-3"></script><script>setTimeout(()=>{const s=document.getElementById('splash');if(s)s.classList.add('hide')},5000);</script></body></html>
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#080910">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Marvel Experience">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<title>Marvel Experience</title>
+</head>
+<body>
+<main id="app" class="app">
+<section class="screen active">
+<div class="wrap">
+<div class="hero"><div class="logo">🦸‍♂️</div><h1>MARVEL EXPERIENCE</h1><p>Il tuo universo. Le tue regole.</p></div>
+<div class="login-grid"><div class="card"><h3>Caricamento...</h3><p class="muted">Sto preparando il tuo universo Marvel.</p></div></div>
+</div>
+</section>
+</main>
+<div id="toast" class="toast"></div>
+<script>
+// Elimina eventuali vecchie versioni del service worker che possono aver congelato l'app.
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.getRegistrations().then(rs=>Promise.all(rs.map(r=>r.unregister()))).catch(()=>{});
+}
+</script>
+<script src="./app.js?v=20260915-4"></script>
+</body>
+</html>
