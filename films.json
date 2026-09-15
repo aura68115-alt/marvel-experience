@@ -1,0 +1,338 @@
+{
+  "Iron Man (2008)": {
+    "fase": "MCU Fase 1",
+    "anno": 2008,
+    "durata": "126 min",
+    "regia": "Jon Favreau",
+    "cast": "Robert Downey Jr., Gwyneth Paltrow, Jeff Bridges",
+    "trama": "Tony Stark, geniale miliardario e inventore, costruisce una potente armatura dopo essere stato rapito. Nasce così Iron Man."
+  },
+  "L'incredibile Hulk (2008)": {
+    "fase": "MCU Fase 1",
+    "anno": 2008,
+    "durata": "112 min",
+    "regia": "Louis Leterrier",
+    "cast": "Edward Norton, Liv Tyler, Tim Roth",
+    "trama": "Bruce Banner cerca una cura per la sua trasformazione nell'incredibile Hulk, mentre viene inseguito dalle forze militari."
+  },
+  "Iron Man 2 (2010)": {
+    "fase": "MCU Fase 1",
+    "anno": 2010,
+    "durata": "124 min",
+    "regia": "Jon Favreau",
+    "cast": "Robert Downey Jr., Mickey Rourke, Scarlett Johansson",
+    "trama": "Tony Stark deve affrontare nuovi nemici e le conseguenze della sua identità pubblica di Iron Man."
+  },
+  "Thor (2011)": {
+    "fase": "MCU Fase 1",
+    "anno": 2011,
+    "durata": "115 min",
+    "regia": "Kenneth Branagh",
+    "cast": "Chris Hemsworth, Natalie Portman, Tom Hiddleston",
+    "trama": "Thor viene esiliato sulla Terra e deve imparare cosa significa essere veramente degno del potere che possiede."
+  },
+  "Captain America - Il primo Vendicatore (2011)": {
+    "fase": "MCU Fase 1",
+    "anno": 2011,
+    "durata": "124 min",
+    "regia": "Joe Johnston",
+    "cast": "Chris Evans, Hugo Weaving, Hayley Atwell",
+    "trama": "Steve Rogers diventa Captain America e combatte contro Hydra durante la Seconda Guerra Mondiale."
+  },
+  "The Avengers (2012)": {
+    "fase": "MCU Fase 1",
+    "anno": 2012,
+    "durata": "143 min",
+    "regia": "Joss Whedon",
+    "cast": "Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth",
+    "trama": "I più grandi eroi della Terra devono unirsi per fermare Loki e un'invasione aliena."
+  },
+  "Iron Man 3 (2013)": {
+    "fase": "MCU Fase 2",
+    "anno": 2013,
+    "durata": "130 min",
+    "regia": "Shane Black",
+    "cast": "Robert Downey Jr., Guy Pearce, Gwyneth Paltrow",
+    "trama": "Tony Stark affronta un nemico misterioso mentre cerca di superare le conseguenze della battaglia di New York."
+  },
+  "Thor: The Dark World (2013)": {
+    "fase": "MCU Fase 2",
+    "anno": 2013,
+    "durata": "112 min",
+    "regia": "Alan Taylor",
+    "cast": "Chris Hemsworth, Natalie Portman, Tom Hiddleston",
+    "trama": "Thor deve fermare un'antica minaccia legata agli Elfi Oscuri e all'Etere."
+  },
+  "Captain America: The Winter Soldier (2014)": {
+    "fase": "MCU Fase 2",
+    "anno": 2014,
+    "durata": "136 min",
+    "regia": "Anthony e Joe Russo",
+    "cast": "Chris Evans, Sebastian Stan, Scarlett Johansson",
+    "trama": "Captain America scopre una cospirazione all'interno dello S.H.I.E.L.D. e affronta Winter Soldier."
+  },
+  "Guardiani della Galassia (2014)": {
+    "fase": "MCU Fase 2",
+    "anno": 2014,
+    "durata": "121 min",
+    "regia": "James Gunn",
+    "cast": "Chris Pratt, Zoe Saldana, Dave Bautista",
+    "trama": "Un gruppo improbabile di criminali spaziali deve unirsi per proteggere una potente sfera e salvare la galassia."
+  },
+  "Avengers: Age of Ultron (2015)": {
+    "fase": "MCU Fase 2",
+    "anno": 2015,
+    "durata": "141 min",
+    "regia": "Joss Whedon",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo",
+    "trama": "Gli Avengers creano accidentalmente Ultron, un'intelligenza artificiale che decide che l'umanità rappresenta una minaccia."
+  },
+  "Ant-Man (2015)": {
+    "fase": "MCU Fase 2",
+    "anno": 2015,
+    "durata": "117 min",
+    "regia": "Peyton Reed",
+    "cast": "Paul Rudd, Michael Douglas, Evangeline Lilly",
+    "trama": "Scott Lang diventa Ant-Man e deve utilizzare le sue capacità per compiere una rapina impossibile."
+  },
+  "Captain America: Civil War (2016)": {
+    "fase": "MCU Fase 3",
+    "anno": 2016,
+    "durata": "147 min",
+    "regia": "Anthony e Joe Russo",
+    "cast": "Chris Evans, Robert Downey Jr., Sebastian Stan",
+    "trama": "Gli Avengers si dividono sulla questione della supervisione governativa."
+  },
+  "Doctor Strange (2016)": {
+    "fase": "MCU Fase 3",
+    "anno": 2016,
+    "durata": "115 min",
+    "regia": "Scott Derrickson",
+    "cast": "Benedict Cumberbatch, Rachel McAdams, Tilda Swinton",
+    "trama": "Stephen Strange scopre le arti mistiche e diventa uno dei più potenti maghi della Terra."
+  },
+  "Guardiani della Galassia Vol. 2 (2017)": {
+    "fase": "MCU Fase 3",
+    "anno": 2017,
+    "durata": "136 min",
+    "regia": "James Gunn",
+    "cast": "Chris Pratt, Zoe Saldana, Kurt Russell",
+    "trama": "I Guardiani affrontano nuove minacce mentre Peter Quill scopre la verità sulle proprie origini."
+  },
+  "Spider-Man: Homecoming (2017)": {
+    "fase": "MCU Fase 3",
+    "anno": 2017,
+    "durata": "133 min",
+    "regia": "Jon Watts",
+    "cast": "Tom Holland, Michael Keaton, Robert Downey Jr.",
+    "trama": "Peter Parker cerca di bilanciare la vita da adolescente con quella da supereroe mentre affronta l'Avvoltoio."
+  },
+  "Thor: Ragnarok (2017)": {
+    "fase": "MCU Fase 3",
+    "anno": 2017,
+    "durata": "130 min",
+    "regia": "Taika Waititi",
+    "cast": "Chris Hemsworth, Tom Hiddleston, Cate Blanchett",
+    "trama": "Thor deve affrontare Hela prima che Asgard venga distrutta."
+  },
+  "Black Panther (2018)": {
+    "fase": "MCU Fase 3",
+    "anno": 2018,
+    "durata": "134 min",
+    "regia": "Ryan Coogler",
+    "cast": "Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o",
+    "trama": "T'Challa torna in Wakanda e deve difendere il suo popolo da una minaccia legata al passato."
+  },
+  "Avengers: Infinity War (2018)": {
+    "fase": "MCU Fase 3",
+    "anno": 2018,
+    "durata": "149 min",
+    "regia": "Anthony e Joe Russo",
+    "cast": "Robert Downey Jr., Chris Hemsworth, Josh Brolin",
+    "trama": "Thanos cerca di riunire le Gemme dell'Infinito."
+  },
+  "Ant-Man and the Wasp (2018)": {
+    "fase": "MCU Fase 3",
+    "anno": 2018,
+    "durata": "118 min",
+    "regia": "Peyton Reed",
+    "cast": "Paul Rudd, Evangeline Lilly, Michael Douglas",
+    "trama": "Scott Lang collabora con Hope Van Dyne per una missione legata al Regno Quantico."
+  },
+  "Captain Marvel (2019)": {
+    "fase": "MCU Fase 3",
+    "anno": 2019,
+    "durata": "124 min",
+    "regia": "Anna Boden, Ryan Fleck",
+    "cast": "Brie Larson, Samuel L. Jackson, Ben Mendelsohn",
+    "trama": "Carol Danvers diventa una delle eroine più potenti dell'universo."
+  },
+  "Avengers: Endgame (2019)": {
+    "fase": "MCU Fase 3",
+    "anno": 2019,
+    "durata": "181 min",
+    "regia": "Anthony e Joe Russo",
+    "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo",
+    "trama": "Gli Avengers rimasti devono trovare un modo per annullare le conseguenze dello schiocco di Thanos."
+  },
+  "Spider-Man: Far from Home (2019)": {
+    "fase": "MCU Fase 3",
+    "anno": 2019,
+    "durata": "129 min",
+    "regia": "Jon Watts",
+    "cast": "Tom Holland, Jake Gyllenhaal, Zendaya",
+    "trama": "Peter Parker parte per un viaggio in Europa, ma una nuova minaccia lo costringe a tornare in azione."
+  },
+  "Black Widow (2021)": {
+    "fase": "MCU Fase 4",
+    "anno": 2021,
+    "durata": "134 min",
+    "regia": "Cate Shortland",
+    "cast": "Scarlett Johansson, Florence Pugh, David Harbour",
+    "trama": "Natasha Romanoff affronta il proprio passato e torna a confrontarsi con la Red Room."
+  },
+  "Shang-Chi e la leggenda dei Dieci Anelli (2021)": {
+    "fase": "MCU Fase 4",
+    "anno": 2021,
+    "durata": "132 min",
+    "regia": "Destin Daniel Cretton",
+    "cast": "Simu Liu, Awkwafina, Tony Leung",
+    "trama": "Shang-Chi viene costretto ad affrontare il passato della propria famiglia."
+  },
+  "Eternals (2021)": {
+    "fase": "MCU Fase 4",
+    "anno": 2021,
+    "durata": "156 min",
+    "regia": "Chloé Zhao",
+    "cast": "Gemma Chan, Richard Madden, Angelina Jolie",
+    "trama": "Un gruppo di esseri immortali protegge segretamente la Terra da migliaia di anni."
+  },
+  "Spider-Man: No Way Home (2021)": {
+    "fase": "MCU Fase 4",
+    "anno": 2021,
+    "durata": "148 min",
+    "regia": "Jon Watts",
+    "cast": "Tom Holland, Zendaya, Benedict Cumberbatch, Tobey Maguire, Andrew Garfield",
+    "trama": "Peter Parker chiede aiuto a Doctor Strange per far dimenticare al mondo la sua identità."
+  },
+  "Doctor Strange nel Multiverso della Follia (2022)": {
+    "fase": "MCU Fase 4",
+    "anno": 2022,
+    "durata": "126 min",
+    "regia": "Sam Raimi",
+    "cast": "Benedict Cumberbatch, Elizabeth Olsen, Xochitl Gomez",
+    "trama": "Doctor Strange attraversa diverse realtà del multiverso."
+  },
+  "Thor: Love and Thunder (2022)": {
+    "fase": "MCU Fase 4",
+    "anno": 2022,
+    "durata": "119 min",
+    "regia": "Taika Waititi",
+    "cast": "Chris Hemsworth, Christian Bale, Natalie Portman",
+    "trama": "Thor deve affrontare Gorr, un nemico deciso a eliminare gli dei."
+  },
+  "Black Panther: Wakanda Forever (2022)": {
+    "fase": "MCU Fase 4",
+    "anno": 2022,
+    "durata": "161 min",
+    "regia": "Ryan Coogler",
+    "cast": "Letitia Wright, Lupita Nyong'o, Tenoch Huerta",
+    "trama": "Wakanda deve affrontare una nuova minaccia."
+  },
+  "Ant-Man and the Wasp: Quantumania (2023)": {
+    "fase": "MCU Fase 5",
+    "anno": 2023,
+    "durata": "125 min",
+    "regia": "Peyton Reed",
+    "cast": "Paul Rudd, Evangeline Lilly, Jonathan Majors",
+    "trama": "La famiglia Ant-Man viene trascinata nel Regno Quantico."
+  },
+  "Guardiani della Galassia Vol. 3 (2023)": {
+    "fase": "MCU Fase 5",
+    "anno": 2023,
+    "durata": "150 min",
+    "regia": "James Gunn",
+    "cast": "Chris Pratt, Chukwudi Iwuji, Bradley Cooper",
+    "trama": "I Guardiani affrontano una missione disperata per salvare Rocket."
+  },
+  "The Marvels (2023)": {
+    "fase": "MCU Fase 5",
+    "anno": 2023,
+    "durata": "105 min",
+    "regia": "Nia DaCosta",
+    "cast": "Brie Larson, Teyonah Parris, Iman Vellani",
+    "trama": "Captain Marvel, Monica Rambeau e Kamala Khan si ritrovano coinvolte in una misteriosa connessione cosmica."
+  },
+  "Deadpool & Wolverine (2024)": {
+    "fase": "MCU Fase 5",
+    "anno": 2024,
+    "durata": "128 min",
+    "regia": "Shawn Levy",
+    "cast": "Ryan Reynolds, Hugh Jackman, Emma Corrin",
+    "trama": "Deadpool viene coinvolto in una missione attraverso il multiverso e chiede aiuto a Wolverine."
+  },
+  "Spider-Man (2002)": {
+    "fase": "Trilogia Raimi",
+    "anno": 2002,
+    "durata": "121 min",
+    "regia": "Sam Raimi",
+    "cast": "Tobey Maguire, Willem Dafoe, Kirsten Dunst",
+    "trama": "Peter Parker viene morso da un ragno geneticamente modificato."
+  },
+  "Spider-Man 2 (2004)": {
+    "fase": "Trilogia Raimi",
+    "anno": 2004,
+    "durata": "127 min",
+    "regia": "Sam Raimi",
+    "cast": "Tobey Maguire, Alfred Molina, Kirsten Dunst",
+    "trama": "Peter deve affrontare Doctor Octopus."
+  },
+  "Spider-Man 3 (2007)": {
+    "fase": "Trilogia Raimi",
+    "anno": 2007,
+    "durata": "139 min",
+    "regia": "Sam Raimi",
+    "cast": "Tobey Maguire, Topher Grace, Thomas Haden Church",
+    "trama": "Peter affronta nuovi nemici e una misteriosa sostanza aliena."
+  },
+  "The Amazing Spider-Man (2012)": {
+    "fase": "The Amazing Spider-Man",
+    "anno": 2012,
+    "durata": "136 min",
+    "regia": "Marc Webb",
+    "cast": "Andrew Garfield, Emma Stone, Rhys Ifans",
+    "trama": "Peter Parker scopre nuovi segreti sul proprio passato e affronta Lizard."
+  },
+  "The Amazing Spider-Man 2 (2014)": {
+    "fase": "The Amazing Spider-Man",
+    "anno": 2014,
+    "durata": "142 min",
+    "regia": "Marc Webb",
+    "cast": "Andrew Garfield, Emma Stone, Jamie Foxx",
+    "trama": "Spider-Man affronta Electro e altri nemici."
+  },
+  "Venom (2018)": {
+    "fase": "Sony's Spider-Man Universe",
+    "anno": 2018,
+    "durata": "112 min",
+    "regia": "Ruben Fleischer",
+    "cast": "Tom Hardy, Michelle Williams, Riz Ahmed",
+    "trama": "Eddie Brock entra in contatto con un simbionte alieno e diventa Venom."
+  },
+  "Venom: La furia di Carnage (2021)": {
+    "fase": "Sony's Spider-Man Universe",
+    "anno": 2021,
+    "durata": "97 min",
+    "regia": "Andy Serkis",
+    "cast": "Tom Hardy, Woody Harrelson, Michelle Williams",
+    "trama": "Venom affronta Carnage."
+  },
+  "Venom: The Last Dance (2024)": {
+    "fase": "Sony's Spider-Man Universe",
+    "anno": 2024,
+    "durata": "109 min",
+    "regia": "Kelly Marcel",
+    "cast": "Tom Hardy, Chiwetel Ejiofor, Juno Temple",
+    "trama": "Eddie e Venom sono costretti a fuggire mentre una nuova minaccia mette in pericolo il loro futuro."
+  }
+}
