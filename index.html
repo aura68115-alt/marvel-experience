@@ -16,19 +16,9 @@
 <body>
 <div id="splash" class="splash hide"></div>
 <main id="app" class="app">
-<section class="screen active">
-<div class="wrap">
-<div class="hero"><div class="logo">🦸‍♂️</div><h1>MARVEL EXPERIENCE</h1><p>Il tuo universo. Le tue regole.</p></div>
-<div class="login-grid"><div class="card"><h3>Caricamento...</h3><p class="muted">Sto preparando il tuo universo Marvel.</p></div></div>
-</div>
-</section>
+<section class="screen active"><div class="wrap"><div class="hero"><div class="logo">🦸‍♂️</div><h1>MARVEL EXPERIENCE</h1><p>Il tuo universo. Le tue regole.</p></div><div class="login-grid"><div class="card"><h3>Avvio dell'universo...</h3><p class="muted">Sto caricando l'app. Un momento...</p></div></div></div></section>
 </main>
 <div id="toast" class="toast"></div>
-<script>
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.getRegistrations().then(rs=>Promise.all(rs.map(r=>r.unregister()))).catch(()=>{});
-}
-</script>
-<script src="./app.js?v=20260915-5"></script>
+<script src="./boot-fix.js?v=20260915-6"></script>
 </body>
 </html>
