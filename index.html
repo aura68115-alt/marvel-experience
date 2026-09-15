@@ -1,3 +1,8 @@
 <!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#080910"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Marvel Experience"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="style.css"><title>Marvel Experience</title></head><body>
 <div id="splash" class="splash"><div><div class="splash-logo">🦸‍♂️</div><h1>MARVEL EXPERIENCE</h1><div class="loader"><i></i></div><div class="muted">Caricamento universo...</div></div></div>
-<main id="app" class="app"></main><div id="toast" class="toast"></div><script src="app.js"></script></body></html>
+<main id="app" class="app"></main><div id="toast" class="toast"></div>
+<script>
+(async()=>{try{const regs=await navigator.serviceWorker?.getRegistrations?.()||[];await Promise.all(regs.map(r=>r.unregister()));if(window.caches){const ks=await caches.keys();await Promise.all(ks.map(k=>caches.delete(k)));}}catch(e){}})();
+setTimeout(()=>{const s=document.getElementById('splash');if(s&&!s.classList.contains('hide')){s.classList.add('hide');if(typeof render==='function'){try{render()}catch(e){}}}},5000);
+</script>
+<script src="app.js?v=20260915-2"></script></body></html>
