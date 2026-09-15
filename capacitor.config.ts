@@ -3,7 +3,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'com.marvelexperience.app',
   appName: 'Marvel Experience',
-  webDir: '.',
+  webDir: 'www',
   bundledWebRuntime: false,
   server: {
     androidScheme: 'https'
