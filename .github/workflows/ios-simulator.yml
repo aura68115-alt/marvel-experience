@@ -1,0 +1,49 @@
+name: Build iOS Simulator App
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, mobile-app]
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Add iOS platform
+        run: npx cap add ios
+
+      - name: Sync web app
+        run: npx cap sync ios
+
+      - name: Build iOS Simulator app
+        run: |
+          xcodebuild \
+            -workspace ios/App/App.xcworkspace \
+            -scheme App \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -derivedDataPath build/ios \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Package simulator app
+        run: ditto -c -k --sequesterRsrc --keepParent build/ios/Build/Products/Debug-iphonesimulator/App.app marvel-experience-ios-simulator.zip
+
+      - name: Upload simulator build
+        uses: actions/upload-artifact@v4
+        with:
+          name: marvel-experience-ios-simulator
+          path: marvel-experience-ios-simulator.zip
